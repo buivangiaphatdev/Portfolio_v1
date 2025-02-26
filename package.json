@@ -1,20 +1,23 @@
 {
   "name": "portfolio_v1",
+  "homepage": "https://buivangiaphatdev.github.io/Portfolio_v1/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "npm install --prefix",
-    "start": "npm run start --prefix",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.7",
+    "gh-pages": "^6.3.0",
     "leva": "^0.9.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
